@@ -20,4 +20,4 @@ data = {...data, name: name, email: email, hobby: hobby }
 console.log(data)
 
 const {street, city} = data.address
-// console.log(city)
+// console.log(`${street}, ${city}`)

@@ -1,4 +1,4 @@
-const printSegitiga = 5.6
+const printSegitiga = 5
 
 if (typeof printSegitiga != 'number') {
     console.log('Data Harus Number!')
