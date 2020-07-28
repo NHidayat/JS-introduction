@@ -4,7 +4,7 @@ const name = [
 'Ella', 'Faith', 'Olivia', 'Penelope']
 
 
-const searchName = (text, limit, pass) => {
+const searchName = (text, limit, callback) => {
 
     // let filter =  name.filter(element => element.toLowerCase().indexOf(text.toLowerCase()) !== -1)
     
@@ -12,9 +12,9 @@ const searchName = (text, limit, pass) => {
     
     let result = filter.slice(0, limit)
 
-    pass(result)
+    callback(result)
 }
 
-const showName = (e) => e.length > 0 ? console.log(e) : console.log('Data tidak ditemukan') 
+const showName = e => e.length > 0 ? console.log(e) : console.log('Data tidak ditemukan') 
 
-searchName('o', 5, showName)
+searchName('al', 4, showName)
