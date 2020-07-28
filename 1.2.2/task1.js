@@ -10,11 +10,11 @@ length = name.length
 
 // 2. forEach
 // Method perulangan untuk mengembalikan data sebuah array
-animals.forEach(element => console.log(element))
+// animals.forEach(element => console.log(element))
 
-animals.forEach(function tampil(element, index) {
-	console.log(`Index ke-${index} = ${element}`);
-});
+// animals.forEach(function tampil(element, index) {
+// 	console.log(`Index ke-${index} = ${element}`);
+// });
 
 // ---------------------
 
@@ -29,7 +29,7 @@ let toString = animals.toString()
 // Mengembalikan tanggal dan waktu beserta zona waktu 
 let date = new Date()
 let dates = Date()
-// console.log(date2)
+// console.log(dates)
 
 // ---------------------
 
@@ -42,7 +42,7 @@ let charKe = teks.charAt(2)
 // ---------------------
 
 // 6. replace
-// mengubah karakter dari string yang sama berdasarkan 
+// mengubah karakter dari string berdasarkan nilai atau string pengganti yang diberi  
 let text = "Hello World!"
 let text2 = text.replace('World', 'Dunia')
 // console.log(text2)
@@ -78,7 +78,7 @@ let minResult = Math.min(12,9,20)
 // ---------------------
 
 // 10. JSON.stringify
-// Mengkonversi data object menjadi string.
+// Mengkonversi data object menjadi sebuah string.
 let bio = {name: 'John', age: 20, email: 'john@john.com' }
 let convert = JSON.stringify(bio)
-console.log(convert)
+// console.log(convert)
