@@ -50,7 +50,7 @@ let text2 = text.replace('World', 'Dunia')
 // ---------------------
 
 // 7. search
-// Mencari karakter yang ditentukan dan mengembaikan/menampilkan urutannya 
+// Mencari karakter yang ditentukan dan mengembaikan/menampilkan urutan indexnya
 let sText = 'Good People'
 let sResult = sText.search('People')
 // console.log(sResult)
