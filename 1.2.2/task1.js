@@ -26,7 +26,7 @@ let toString = animals.toString()
 // ---------------------
 
 // 4. Date
-// Mengembalikan tanggal dan waktu beserta zona waktu 
+// Mengembalikan tanggal dan waktu sekarang beserta zona waktu 
 let date = new Date()
 let dates = Date()
 // console.log(dates)

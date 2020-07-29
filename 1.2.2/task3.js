@@ -11,7 +11,7 @@ let seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
     } else {
         
         let filter = dataArray.filter(data => data > nilaiAwal && data < nilaiAkhir)
-        let result = filter.sort((kecil, besar) => kecil-besar)
+        let result = filter.sort((a,b) => a-b)
         console.log(result)
     }
     
