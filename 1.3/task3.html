@@ -7,8 +7,8 @@
 
 <script type="text/javascript">
 	
-	const fetchData = () => {
-	fetch('http://jsonplaceholder.typicode.com/users')
+	const fetchData = (url) => {
+	fetch(url)
 	.then(res => {
 		if (res.ok) {
 			return res.json()
@@ -27,7 +27,7 @@
 	.catch(error => console.log('Error. Status Code: ' + statusCode) )
 }
 
-fetchData()
+fetchData('http://jsonplaceholder.typicode.com/users')
 
 </script>
 </body>
