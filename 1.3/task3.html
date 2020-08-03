@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fetch Data</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	const fetchData = () => {
+	fetch('http://jsonplaceholder.typicode.com/users')
+	.then(res => {
+		if (res.ok) {
+			return res.json()
+		} else {
+			statusCode = res.status 
+			console.log('Ada kesalahan')
+		}
+	})
+	.then(data => {
+	// let data = data.map(({name}) => name)
+	// let result = data.map(value => value.name)
+	// console.log(result)
+	let result = data.forEach(data => console.log(data.name))
+
+})
+	.catch(error => console.log('Error. Status Code: ' + statusCode) )
+}
+
+fetchData()
+
+</script>
+</body>
+</html>
