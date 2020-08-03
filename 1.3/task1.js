@@ -25,6 +25,9 @@ cekHariKerja(day).then((message) => {
 .catch((error) => {
 	console.log(error);
 });
+// then catch adalah fungsi/metode sebuah object promise yag digunakan untuk menangkap data di dalam promise tersebut.
+// then => menangkap dan menerima hasil suskes
+// cacth => menangkap dan menerima hasil gagal
 
 // ------------------------
 
@@ -39,3 +42,6 @@ async function cekTry() {
 	}
 } 
 cekTry()
+// try catch merupakan sebuah metode untuk menghandle error. Ini biasanya digunakan untuk menangani error agar proses setelahnya tidak berhenti.
+// try => untuk menjalankan perintah yang mungkin bisa saja terjadi error
+//  catch => menangkap error pada blok 'try' jika terjadi sebuah kesalahan
