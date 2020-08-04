@@ -16,10 +16,8 @@ const cekHariKerja = (day) => {
 
 // ------------------------
 
-let day = 'senin'
-
 // then catch
-cekHariKerja(day).then((message) => {
+cekHariKerja('senin').then((message) => {
 	console.log(message);
 })
 .catch((error) => {
@@ -31,8 +29,8 @@ cekHariKerja(day).then((message) => {
 
 // ------------------------
 
-// try ctach
-async function cekTry() {	
+// try catch
+async function cekTry(day) {	
 	try {
 		hari = await cekHariKerja(day)
 		data = `${hari} adalah hari kerja`
@@ -41,7 +39,7 @@ async function cekTry() {
 		console.log(e);
 	}
 } 
-cekTry()
+cekTry('senin')
 // try catch merupakan sebuah metode untuk menghandle error. Ini biasanya digunakan untuk menangani error agar proses setelahnya tidak berhenti.
 // try => untuk menjalankan perintah yang mungkin bisa saja terjadi error
 //  catch => menangkap error pada blok 'try' jika terjadi sebuah kesalahan
